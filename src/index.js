@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Something from './Components/states'
-import Timer from "./Components/timer"
+import Hook from "./Components/hooks"
+import Timer from './Components/timer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-ReactDOM.render(<App/>,document.getElementById('root')
+
+
+import Container from './Components/userBar'
+ReactDOM.render(<Timer/>,document.getElementById('root')
 );
 
 // setTimeout(() => {

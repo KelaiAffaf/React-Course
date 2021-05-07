@@ -10,7 +10,8 @@ class Timer extends Component {
       ms: 0,
       start: false
     };
-    setInterval(() => {
+
+    setInterval( () => {
       if (this.state.start)
         this.setState({
           ms: this.state.ms + 1000,
@@ -18,7 +19,7 @@ class Timer extends Component {
           mm: parseInt((this.state.ms % 3600000) / 60000),
           ss: parseInt(((this.state.ms % 3600000) % 60000) / 1000)
         });
-    }, 1000);
+    } , 1000);
   }
 
   clicked = () =>
